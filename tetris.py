@@ -1,11 +1,10 @@
-import pygame
+import pygame #pip install pygame
 import random
-
     
 
 pygame.font.init()
 
-# GLOBALS VARS
+
 s_width = 800
 s_height = 700
 play_width = 300  # meaning 300 // 10 = 30 width per block
@@ -16,7 +15,7 @@ top_left_x = (s_width - play_width) // 2
 top_left_y = s_height - play_height
 
 
-# SHAPE FORMATS
+# shape foramtties
 
 S = [['.....',
       '.....',
@@ -122,7 +121,6 @@ T = [['.....',
 
 shapes = [S, Z, I, O, J, L, T]
 shape_colors = [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 165, 0), (0, 0, 255), (128, 0, 128)]
-# index 0 - 6 represent shape
 
 
 class Piece(object):  # *
